@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //-----6th
+
+      let x = 32243;
+      function fo() {
+        let num = x.toString();
+        return num.split("").reverse().join("");
+      }
+      console.log(fo(x));
+
+      //-----9th
+
+      const arr = [12, 35, 1, 10, 34, 1];
+
+      const highest = arr.sort(function (a, b) {
+        return b - a;
+      });
+
+      console.log(highest);
+      console.log(highest[1]);
+
+      //------------10th
+
+      let n = [2, 5, 4];
+
+      function primeNO(n) {
+        if (n < 2) {
+          return false;
+        } else {
+          for (let i = 2; i < n; i++) {
+            if (n % i == 0) {
+              return "Not a Prime No";
+            }
+          }
+          return "Prime no";
+        }
+      }
+      console.log(primeNO(2));
+      console.log(primeNO(4));
+
+      //----------------11th
+
+      const arr1 = [2, 4, 7, 88, 55, 3];
+
+      const ar1 = function (arr) {
+        return Math.max.apply(null, arr);
+      };
+
+      let maxi = console.log(ar1(arr1));
+
+      const ar2 = function (arr) {
+        return Math.min.apply(null, arr);
+      };
+
+      let mini = console.log(ar2(arr1));
+
+      console.log(ar1(arr1) + ar2(arr1));
+
+      //-------------------------12th
+
+      const ari = [1, 7, -6, 15, 7, 9, 0, 2, -3];
+      seq = [7, 15, -3];
+
+      const find = seq.every((ele) => ari.includes(ele));
+      console.log(find);
+
+      //-----------------------15th
+
+      const s1 = [2, 4, 5];
+      const s2 = [5, 3, 2];
+
+      const s = s1.map((ele, index) => {
+        return ele + index;
+      });
+      console.log(s);
+
+      //------------------------3rd
+
+      for (let i = 0; i <= 20; i++) {
+        let c = i * 3;
+        console.log(c);
+      }
+
+      //---------------------------8th
+
+      const unique = "jdhsjdncabajddjfhdjna";
+
+      const Uni = new Set(unique);
+      console.log(Uni);
+    </script>
+  </body>
+</html>
